@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CET Response Extractor</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>CET Response Extractor</h1>
+    <p>Upload a saved CET webpage (.mht) and view the extracted results offline.</p>
+    <div id="noticeBanner" class="notice-banner hidden">
+      Please share your result with your friend <strong>TANMAY YADAV</strong>
+    </div>
+    <a id="callNow" class="call-button hidden" href="tel:+918888421709">Call Now</a>
+
+    <input type="file" id="mhtFile" accept=".mht" />
+    <button id="extractBtn">Upload and Extract</button>
+    <div id="status">Ready to extract.</div>
+
+    <div id="results-container" style="display: none;">
+      <div class="results-section">
+        <h2>Overall Performance</h2>
+        <div class="summary-grid">
+          <div class="summary-item total marks">
+            <div class="label">Marks</div>
+            <div class="value" id="total-marks">0</div>
+          </div>
+          <div class="summary-item correct">
+            <div class="label">Correct</div>
+            <div class="value" id="total-correct">0</div>
+          </div>
+          <div class="summary-item wrong">
+            <div class="label">Wrong</div>
+            <div class="value" id="total-wrong">0</div>
+          </div>
+          <div class="summary-item unattempted">
+            <div class="label">Unattempted</div>
+            <div class="value" id="total-unattempted">0</div>
+          </div>
+          <div class="summary-item total">
+            <div class="label">Total</div>
+            <div class="value" id="total-questions">0</div>
+          </div>
+        </div>
+        <div class="percentage" id="percentage-display"></div>
+      </div>
+
+      <div class="results-section">
+        <h2>Subject-wise Performance</h2>
+        <div id="subjects-container"></div>
+      </div>
+    </div>
+
+    <details style="margin-top: 20px;">
+      <summary>Raw JSON Output</summary>
+      <textarea id="output" readonly placeholder="Extraction output will appear here"></textarea>
+    </details>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

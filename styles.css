@@ -1,0 +1,251 @@
+:root {
+  font-family: Arial, sans-serif;
+  color: #222;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 400px;
+}
+.container {
+  padding: 16px;
+}
+h1 {
+  margin: 0 0 12px;
+  font-size: 18px;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  background: #0f62fe;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+button:hover {
+  background: #0353e9;
+}
+.hidden {
+  display: none !important;
+}
+.notice-banner {
+  margin: 16px 0;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ffba08, #ff6f3c);
+  color: #1a1a1a;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+.notice-banner strong {
+  color: #0f2c86;
+}
+.call-button {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 14px;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  background: #d32f2f;
+  transition: background 0.2s ease;
+}
+.call-button:hover {
+  background: #b71c1c;
+}
+#status {
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: #333;
+}
+textarea {
+  width: 100%;
+  height: 250px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;
+  font-family: monospace;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+
+/* Student Information Styles */
+.student-info-section {
+  margin-top: 16px;
+  margin-bottom: 12px;
+}
+
+.student-info-card {
+  background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+  border: 2px solid #5e35b1;
+  border-radius: 8px;
+  padding: 12px 16px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.student-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #5e35b1;
+}
+
+/* Results Display Styles */
+.results-section {
+  margin-top: 16px;
+  padding: 12px;
+  background: #f5f5f5;
+  border-radius: 6px;
+}
+
+.results-section h2 {
+  margin: 0 0 12px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #222;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.summary-item {
+  padding: 12px;
+  border-radius: 6px;
+  text-align: center;
+  color: white;
+}
+
+.summary-item.correct {
+  background: #8590a2;
+}
+
+.summary-item.wrong {
+  background: #da1e28;
+}
+
+.summary-item.unattempted {
+  background: #9f1d20;
+}
+
+.summary-item.total {
+  background: #24a148;
+}
+
+.summary-item.total.marks {
+  background: #24a148;
+}
+
+.summary-item .label {
+  font-size: 12px;
+  opacity: 0.9;
+  margin-bottom: 4px;
+}
+
+.summary-item .value {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.percentage {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #0f62fe;
+  padding: 10px 0;
+  background: white;
+  border-radius: 4px;
+}
+
+.subject-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+.subject-header {
+  font-weight: bold;
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: #0f62fe;
+}
+
+.subject-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.stat-item {
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stat-item.correct {
+  background: #24a148;
+}
+
+.stat-item.wrong {
+  background: #da1e28;
+}
+
+.stat-item.unattempted {
+  background: #9f1d20;
+}
+
+.stat-label {
+  font-size: 10px;
+  opacity: 0.9;
+}
+
+.stat-value {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.subject-percentage {
+  text-align: center;
+  font-weight: bold;
+  color: #0f62fe;
+  font-size: 14px;
+  padding: 8px;
+  background: #e8f4f8;
+  border-radius: 4px;
+}
+
+details {
+  margin-top: 16px;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: #0f62fe;
+  font-size: 13px;
+  padding: 8px 0;
+}
+
+summary:hover {
+  text-decoration: underline;
+}
